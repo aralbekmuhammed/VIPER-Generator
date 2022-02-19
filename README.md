@@ -1,4 +1,4 @@
-# VIPER Template
+# VIPER Generator
 Xcode File Template for generating VIPER modules: ```View```, ```Interactor```, ```Presenter```, ```Router```, ```Configurator``` and ```Contract```.
 
 # How To Install
