@@ -112,7 +112,7 @@ import Foundation
 class SettingsInteractor: SettingsInteractorProtocol {
 
     // MARK: - Properties
-    var presenter: SettingsPresenterProtocol!
+    weak var presenter: SettingsPresenterProtocol!
 }
 ```
 
@@ -125,7 +125,7 @@ import Foundation
 class SettingsPresenter: SettingsPresenterProtocol {
 
     // MARK: - Properties
-    var view: SettingsViewProtocol!
+    weak var view: SettingsViewProtocol!
     
     var interactor: SettingsInteractorProtocol!
     
@@ -143,7 +143,7 @@ import UIKit
 class SettingsRouter: SettingsRouterProtocol {
     
     // MARK: - Properties
-    var view: SettingsViewProtocol!
+    weak var view: SettingsViewProtocol!
     
     
 }
