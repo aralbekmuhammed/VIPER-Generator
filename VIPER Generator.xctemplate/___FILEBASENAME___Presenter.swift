@@ -11,7 +11,7 @@ import Foundation
 class ___VARIABLE_ModuleName___Presenter: ___VARIABLE_ModuleName___PresenterProtocol {
 
     // MARK: - Properties
-    var view: ___VARIABLE_ModuleName___ViewProtocol!
+    weak var view: ___VARIABLE_ModuleName___ViewProtocol!
     
     var interactor: ___VARIABLE_ModuleName___InteractorProtocol!
     

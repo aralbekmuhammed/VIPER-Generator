@@ -17,13 +17,13 @@ protocol ___VARIABLE_ModuleName___ViewProtocol: UIViewController {
 
 
 // MARK: - Interactor
-protocol ___VARIABLE_ModuleName___InteractorProtocol {
+protocol ___VARIABLE_ModuleName___InteractorProtocol: AnyObject {
     var presenter: ___VARIABLE_ModuleName___PresenterProtocol! { get set }
 }
 
 
 // MARK: - Presenter
-protocol ___VARIABLE_ModuleName___PresenterProtocol {
+protocol ___VARIABLE_ModuleName___PresenterProtocol: AnyObject {
     var view: ___VARIABLE_ModuleName___ViewProtocol! { get set }
     var interactor: ___VARIABLE_ModuleName___InteractorProtocol! { get set }
     var router: ___VARIABLE_ModuleName___RouterProtocol! { get set }
@@ -31,12 +31,12 @@ protocol ___VARIABLE_ModuleName___PresenterProtocol {
 
 
 // MARK: - Router
-protocol ___VARIABLE_ModuleName___RouterProtocol {
+protocol ___VARIABLE_ModuleName___RouterProtocol: AnyObject {
     var view: ___VARIABLE_ModuleName___ViewProtocol! { get set }
 }
 
 
 //MARK: - Configurator
-protocol ___VARIABLE_ModuleName___ConfiguratorProtocol {
+protocol ___VARIABLE_ModuleName___ConfiguratorProtocol: AnyObject {
     static func configure(_ vc: ___VARIABLE_ModuleName___ViewProtocol)
 }
