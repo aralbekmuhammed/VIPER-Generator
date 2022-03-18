@@ -1,5 +1,5 @@
 # VIPER Generator
-Xcode File Template for generating VIPER modules: ```View```, ```Interactor```, ```Presenter```, ```Router```, ```Configurator``` and ```Contract```.
+Xcode File Template for generating VIPER modules: ```View```, ```Interactor```, ```Presenter```, ```Entity```, ```Router```, ```Configurator``` and ```Contract```.
 
 # How To Install
 1. Clone the repository
@@ -132,6 +132,14 @@ class SettingsPresenter: SettingsPresenterProtocol {
     var router: SettingsRouterProtocol!
     
 }
+```
+
+### Entity
+```SettingsEntity.swift```
+
+```swift
+import Foundation
+
 ```
 
 ### Router
