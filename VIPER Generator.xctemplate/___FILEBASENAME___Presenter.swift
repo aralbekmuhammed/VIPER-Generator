@@ -17,4 +17,8 @@ class ___VARIABLE_ModuleName___Presenter: ___VARIABLE_ModuleName___PresenterProt
     
     var router: ___VARIABLE_ModuleName___RouterProtocol!
     
+    func viewDidLoad() {
+        
+    }
+    
 }

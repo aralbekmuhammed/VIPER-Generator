@@ -27,12 +27,17 @@ protocol ___VARIABLE_ModuleName___PresenterProtocol: AnyObject {
     var view: ___VARIABLE_ModuleName___ViewProtocol! { get set }
     var interactor: ___VARIABLE_ModuleName___InteractorProtocol! { get set }
     var router: ___VARIABLE_ModuleName___RouterProtocol! { get set }
+    
+    func viewDidLoad()
 }
 
 
 // MARK: - Router
 protocol ___VARIABLE_ModuleName___RouterProtocol: AnyObject {
     var view: ___VARIABLE_ModuleName___ViewProtocol! { get set }
+    
+    func pop(animated: Bool)
+    func dismiss(animated: Bool)
 }
 
 
